@@ -25,7 +25,7 @@ int main() {
     cvNamedWindow(pDstWindowTitle, CV_WINDOW_AUTOSIZE);
 
     int nThresholdEdge = 1;
-    cvCreateTrackbar(pWindowToolBar, pDstWindowTitle, &nThresholdEdge, 100, on_trackbar);
+    cvCreateTrackbar(pWindowToolBar, pDstWindowTitle, &nThresholdEdge, 254, on_trackbar);
 
     cvShowImage(pWindowTitle, pImage);
     on_trackbar(1);
