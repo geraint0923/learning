@@ -1,18 +1,20 @@
 #include <opencv2/opencv.hpp>
+#include <iostream>
 
 using namespace std;
 
 IplImage *pImage, *pDstImage;
 
-const char *pDstWindowTitle = "Edge Detection";
+const char *pDstWindowTitle = "Threshold";
 
 void on_trackbar(int threshold) {
-    cvCanny(pImage, pDstImage, threshold, threshold * 3, 3);
+    cvThreshold(pImage, pDstImage, threshold, 255, CV_THRESH_BINARY);
     cvShowImage(pDstWindowTitle, pDstImage);
+    cout << "Threshold: " << threshold << endl;
 }
 
 int main() {
-    const char *pImageName = "/Users/yy/Pictures/add.png";
+    const char *pImageName = "/Users/yy/Pictures/aaa.png";
     const char *pWindowTitle = "Origin Image";
     const char *pWindowToolBar = "Threshold";
 

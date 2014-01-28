@@ -3,18 +3,18 @@
 using namespace std;
 
 int main() {
-	const char *pstrImageName = "/Users/yy/Pictures/avatar.jpg";
-	const char *pstrWindowsTitle = "OpenCV-Demo";
+    const char *pstrImageName = "/Users/yy/Pictures/avatar.jpg";
+    const char *pstrWindowsTitle = "OpenCV-Demo";
 
-	IplImage *pImage = cvLoadImage(pstrImageName, CV_LOAD_IMAGE_UNCHANGED);
-	
-	cvNamedWindow(pstrWindowsTitle, CV_WINDOW_AUTOSIZE);
+    IplImage *pImage = cvLoadImage(pstrImageName, CV_LOAD_IMAGE_UNCHANGED);
 
-	cvShowImage(pstrWindowsTitle, pImage);
+    cvNamedWindow(pstrWindowsTitle, CV_WINDOW_AUTOSIZE);
 
-	cvWaitKey();
+    cvShowImage(pstrWindowsTitle, pImage);
 
-	cvDestroyWindow(pstrWindowsTitle);
-	cvReleaseImage(&pImage);
-	return 0;
+    cvWaitKey();
+
+    cvDestroyWindow(pstrWindowsTitle);
+    cvReleaseImage(&pImage);
+    return 0;
 }
