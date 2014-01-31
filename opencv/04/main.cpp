@@ -14,7 +14,7 @@ void on_trackbar(int threshold) {
 }
 
 int main() {
-    const char *pImageName = "/Users/yy/Pictures/aaa.png";
+    const char *pImageName = "/Users/yy/Pictures/mama.JPG";
     const char *pWindowTitle = "Origin Image";
     const char *pWindowToolBar = "Threshold";
 
