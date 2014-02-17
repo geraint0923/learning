@@ -1,0 +1,3 @@
+FILE(GLOB SOURCE_2 "./*.cpp")
+ADD_EXECUTABLE(just_test ${SOURCE_2})
+TARGET_LINK_LIBRARIES(just_test test)

@@ -1,0 +1,2 @@
+FILE(GLOB SOURCE_1 "./*.cpp")
+ADD_LIBRARY(test STATIC ${SOURCE_1})
